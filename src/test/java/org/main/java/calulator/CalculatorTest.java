@@ -67,8 +67,6 @@ public class CalculatorTest {
 	@Test
 	@DisplayName("Verifica divisione")
 	void divideTest2() {
-	    final float num1 = 2.6f;
-	    final float num2 = 6.6f;
 	    assumeTrue(num1 > num2);
 	    final float attRes = num1 / num2;
 	    final float res = Calculator.divide(num1, num2);
@@ -79,8 +77,6 @@ public class CalculatorTest {
 	@Test
 	@DisplayName("Verifica moltiplicazione")
 	void multiplyTest() {
-	    final float num1 = 7.6f;
-	    final float num2 = 4.6f;
 	    assumeTrue(num1 > num2);
 	    final float attRes = num1 * num2;
 	    final float res = Calculator.multiply(num1, num2);
