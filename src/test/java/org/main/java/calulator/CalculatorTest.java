@@ -3,8 +3,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
-import java.util.Random;
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -77,7 +75,6 @@ public class CalculatorTest {
 	@Test
 	@DisplayName("Verifica moltiplicazione")
 	void multiplyTest() {
-	    assumeTrue(num1 > num2);
 	    final float attRes = num1 * num2;
 	    final float res = Calculator.multiply(num1, num2);
 	    
